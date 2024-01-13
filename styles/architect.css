@@ -95,6 +95,28 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #727272;
+    margin-top: 5px;
+}
+.facts-card-container .card-start{
+        font-size: 2.8rem;
+        color: #424242;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
 
   /* responsive media queries */
   /* mobile devices */
@@ -103,17 +125,23 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container
-        {
+    .teams-container,
+       .facts-card-container
+     {
         flex-direction: column
         ;
     }
     .teams-img-container{
         grid-template-columns: 1fr;
     } 
-    .teams-content{
+    .teams-content, 
+    .facts-card-container
+    {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
   }
 
